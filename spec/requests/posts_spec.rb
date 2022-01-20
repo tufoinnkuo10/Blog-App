@@ -18,7 +18,7 @@ RSpec.describe 'POSTS', type: :request do
   end
 
   describe 'GET POSTS #show' do
-    before(:each) { get user_posts_path user_id: 20, id: 30 }
+    before(:example) { get('/users/15/posts/20') }
 
     it 'return 200' do
       expect(response).to have_http_status(:ok)
@@ -29,7 +29,7 @@ RSpec.describe 'POSTS', type: :request do
     end
 
     it 'shows body content of posts show' do
-      expect(response.body).to include('<h1>show user posts details</h1>')
+      expect(response.body).to include('show user posts details')
     end
   end
 end
