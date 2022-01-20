@@ -13,7 +13,7 @@ RSpec.describe 'POSTS', type: :request do
     end
 
     it 'shows body content of index' do
-      expect(response.body).to include('<h1>show user posts details id</h1>')
+      expect(response.body).to include('show user posts details id')
     end
   end
 

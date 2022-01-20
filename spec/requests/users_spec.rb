@@ -13,7 +13,7 @@ RSpec.describe 'USERS', type: :request do
     end
 
     it 'shows correct body content of index' do
-      expect(response.body).to include('<h1>list of users</h1>')
+      expect(response.body).to include('list of users')
     end
   end
 
@@ -29,7 +29,7 @@ RSpec.describe 'USERS', type: :request do
     end
 
     it 'shows correct body content of USERS#show' do
-      expect(response.body).to include('<h1>show user details by index id</h1>')
+      expect(response.body).to include('show user details by index id')
     end
   end
 end
