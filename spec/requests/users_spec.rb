@@ -16,3 +16,20 @@ RSpec.describe 'USERS', type: :request do
       expect(response.body).to include('<h1>list of users</h1>')
     end
   end
+
+  describe 'USERS GET #show' do
+    before(:example) { get('/users/show') }
+
+    it 'return 200 for correct server' do
+      expect(response).to have_http_status(:ok)
+    end
+
+    it 'shows the correct show template' do
+      expect(response).to render_template(:show)
+    end
+
+    it 'shows correct body content of USERS#show' do
+      expect(response.body).to include('<h1>show user details by index id</h1>')
+    end
+  end
+end
