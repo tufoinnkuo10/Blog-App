@@ -1,1 +1,10 @@
-<h1>show user details by index id</h1>
+<section>
+  <%= render partial: 'shared/user_show', locals: {user: @user} %>
+  <div class="bio">
+    <h4>Bio</h4>
+    <p><%= @user.bio %></p>
+  </div>
+  <div class="posts">
+    <%= render @user.posts %>
+  </div>
+</section
