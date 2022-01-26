@@ -5,5 +5,6 @@ class UsersController < ApplicationController
 
   def show
     @user = User.includes(:posts).find(params[:id])
+    @posts = @user.three_recent_user_post
   end
 end
