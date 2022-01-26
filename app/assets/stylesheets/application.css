@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
- .panel {
+.panel {
   width: 90%;
   min-height: 30px;
   padding: 5px;
