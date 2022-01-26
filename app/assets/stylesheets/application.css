@@ -13,7 +13,6 @@
  *= require_tree .
  *= require_self
  */
-
  .panel {
   width: 90%;
   min-height: 30px;
@@ -23,7 +22,7 @@
 }
 
 .grid {
-  display: -ms -grid;
+  display: grid;
 }
 
 .col-2 {
