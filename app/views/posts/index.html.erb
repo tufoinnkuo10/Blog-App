@@ -1,1 +1,7 @@
-<h1>show user posts details id</h1>
+<section>
+  <%= render partial: 'shared/user_show', locals: {user: @user} %>
+  <div class="posts">
+    <%= render @posts %>
+  </div>
+  <button>Pagination</button>
+</section>
