@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
- @import "bootstrap-sprockets";
+@import "bootstrap-sprockets";
 @import "bootstrap";
 
 /** common **/
@@ -21,7 +21,7 @@ body {
   padding-top: 100px;
   padding-bottom: 40px;
   padding-left: 30px;
-  padding-right: 30px
+  padding-right: 30px;
 }
 
 ul,
@@ -75,7 +75,8 @@ img {
   padding: 20px;
 }
 
-.home-page-user, li {
+.home-page-user, 
+li {
   border: 1px solid;
   padding: 6px;
   gap: 15px;
@@ -91,7 +92,8 @@ img {
   padding: 25px 0 0 30px;
 }
 
-.content, a {
+.content,
+ a {
   font-weight: bolder;
   font-size: large;
   padding-right: 2rem;
@@ -101,7 +103,6 @@ img {
   margin-bottom: 40px;
   border: 1px solid;
   padding: 10px;
-
 }
 
 .user_posts {
@@ -115,7 +116,8 @@ img {
   padding-right: 20px;
 }
 
-.content, h3 {
+.content,
+ h3 {
   padding-right: 20px;
 }
 
@@ -136,4 +138,3 @@ img {
   align-items: center;
   justify-content: space-between;
 }
-
