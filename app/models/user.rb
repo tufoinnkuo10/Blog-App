@@ -5,5 +5,6 @@ class User < ApplicationRecord
 
   def three_recent_user
     User.limit(3).order(created_at: :desc)
+
   end
 end
