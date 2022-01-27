@@ -75,7 +75,7 @@ img {
   padding: 20px;
 }
 
-.home-page-user, 
+.home-page-user,
 li {
   border: 1px solid;
   padding: 6px;
@@ -93,7 +93,7 @@ li {
 }
 
 .content,
- a {
+a {
   font-weight: bolder;
   font-size: large;
   padding-right: 2rem;
@@ -117,7 +117,7 @@ li {
 }
 
 .content,
- h3 {
+h3 {
   padding-right: 20px;
 }
 
