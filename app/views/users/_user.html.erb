@@ -1,0 +1,9 @@
+<li class="user_home">
+  <!--<%# <%= image_tag("image1.jpg", width:'100vw') %>  %>-->
+  <img class="picture" src=<%=user.photo%>>
+  <div class="content">
+    <%= link_to user.name, user_path(user.id)%>
+    <%= link_to 'Create New post', new_post_path, class: 'new_post' %>
+    <h3> number of posts: <%= user.postcounter == nil ? 0 : user.postcounter %></h3>
+  </div>
+</li>
