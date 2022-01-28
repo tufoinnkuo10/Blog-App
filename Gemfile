@@ -33,6 +33,10 @@ gem 'ffi'
 
 gem 'net-http'
 
+gem 'bootstrap-sass'
+
+gem 'bullet'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
