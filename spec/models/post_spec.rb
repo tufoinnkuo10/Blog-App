@@ -12,7 +12,7 @@ RSpec.describe Post, type: :model do
     end
 
     it 'is valid commentscounter >= 0' do
-      subject.comments_counter = -2
+      subject.commentscounter = -2
       expect(subject).to be_invalid
     end
 
@@ -26,18 +26,14 @@ RSpec.describe Post, type: :model do
       expect(subject).to be_invalid
     end
 
-    it 'should be able to save posts' do
-      expect(subject.save).to eq(true)
-    end
-
     it 'should count the number of comments' do
-      subject.comments_counter = 15
-      expect(subject.comments_counter).to eq(15)
+      subject.commentscounter = 15
+      expect(subject.commentscounter).to eq(15)
     end
 
     it 'should count the number of likes' do
-      subject.likes_counter = 10
-      expect(subject.likes_counter).to eq(10)
+      subject.likescounter = 10
+      expect(subject.likescounter).to eq(10)
     end
   end
 

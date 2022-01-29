@@ -10,7 +10,7 @@ RSpec.describe User, type: :model do
     end
 
     it 'is valid postcounter >= 0' do
-      subject.posts_counter = -2
+      subject.postcounter = -2
       expect(subject).to be_invalid
     end
 
