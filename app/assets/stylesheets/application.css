@@ -92,7 +92,7 @@ li {
   padding: 25px 0 0 30px;
 }
 
-.content,
+.main-content,
 a {
   font-weight: bolder;
   font-size: large;
@@ -116,12 +116,12 @@ a {
   padding-right: 20px;
 }
 
-.content,
+.main-content,
 h3 {
   padding-right: 20px;
 }
 
-.see_all_post {
+.all_post {
   text-align: center;
 }
 
@@ -129,7 +129,7 @@ h3 {
   padding: 10px;
 }
 
-.comments_index {
+.commentspart {
   padding: 10px 0 50px 0;
 }
 

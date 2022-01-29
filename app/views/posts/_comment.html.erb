@@ -1,6 +1,6 @@
-<li class="comments_index">
-  <%comments.each do |comment| %>
-    <div class="comment_spacer">
+<li class="commentspart">
+  <%comments.includes(:user).each do |comment| %>
+    <div class="space-c">
       <span>Name: <%= comment.user.name %></span>
       <span>Comment: <%= comment.text %></span>
     </div>

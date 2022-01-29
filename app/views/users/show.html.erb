@@ -3,10 +3,8 @@
   <h2  class="bio"><span>Bio:</span><br/>
     <%= @user.bio %>
   </h2>
-  <ul>
-    <%= render @user.posts %>
-  </ul>
-  <div class="see_all_post">
-    <button type="button" class="btn btn-secondary"><%= link_to "See all user posts", user_posts_path(@user.id) %></button>
+  <%= render 'post', posts: @user.posts %>
+  <div class="all_post">
+    <button type="button" class="btn btn-secondary"><%= link_to "existing user post", user_posts_path(@user.id) %></button>
   </div>
 </div>
